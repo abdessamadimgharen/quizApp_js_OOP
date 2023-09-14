@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+.settings,
+.quiz,
+.final {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 20px auto;
+  width: 600px;
+}
+.settings h2 {
+  margin: 0 0 25px;
+  text-align: center;
+  color: #d4b503;
+}
+.settings :is(select, .diff, .nQ) {
+  margin-bottom: 10px;
+}
+#startBtn,
+#next,
+#again {
+  border: 0;
+  width: 200px;
+  background-color: #d4b503;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: arial;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto 0;
+}
+.quiz .count {
+  background-color: #fff;
+  padding: 5px;
+}
+.quiz label {
+  display: block;
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .settings,
+  .quiz,
+  .final {
+    width: 100%;
+  }
+}

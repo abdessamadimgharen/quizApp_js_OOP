@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App JS OOP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="final" style="display: none">
+      <h2>You answered all questions</h2>
+      <p class="score"></p>
+      <h4>Try again</h4>
+      <button id="again">again</button>
+    </div>
+    <div style="display: none" class="quiz">
+      <div class="count">
+        <span class="current">0</span>
+        <span>/</span>
+        <span class="total"></span>
+      </div>
+      <h3 id="question"></h3>
+      <label id="a1" class="container"></label>
+      <label id="a2" class="container"></label>
+      <label id="a3" class="container"></label>
+      <label id="a4" class="container"></label>
+
+      <button id="next">Next</button>
+    </div>
+    <div class="settings">
+      <h2>Quiz Settings</h2>
+      <label for="category">Select Category</label>
+      <select name="" id="category">
+        <option value="9">General Category</option>
+        <option value="27">Animals</option>
+        <option value="23">History</option>
+        <option value="21">Sports</option>
+      </select>
+
+      <div class="diff">
+        <label for="difficulty">Difficulty</label>
+        <label for="easy">
+          <input type="radio" id="easy" name="diff" />
+          Easy
+        </label>
+        <label for="medium">
+          <input type="radio" id="medium" name="diff" />
+          Medium
+        </label>
+        <label for="hard">
+          <input type="radio" id="hard" name="diff" />
+          Hard
+        </label>
+      </div>
+
+      <div class="nQ">
+        <label for="nQuestions">Number of Questions</label>
+        <input type="number" id="nQuestions" />
+      </div>
+
+      <button id="startBtn" class="submit">Start Quiz</button>
+    </div>
+    <script src="main.js" type="module"></script>
+    <script src="" type="module"></script>
+  </body>
+</html>
